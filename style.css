@@ -1,5 +1,15 @@
+* {border: 10px solid black;}
+
 h1{
     color: red;
     font: optional;
     font-size: xx-large;
+}
+
+.secondH1 {
+    color: blue;
+}
+
+#thirdH1 {
+    color: black;
 }
