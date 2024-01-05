@@ -4,7 +4,7 @@ let lastItem = arr.slice(-1)
 
 let num = lastItem.slice(0)
 
-num = 9
+num = ""
 
 
 arr[arr.length - 1]

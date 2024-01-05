@@ -1,4 +1,21 @@
-let input = prompt("What is your name?")
-let input2 = prompt("What is your age?")
+const grabGuessNameLabel = document.getElementById("guessNameLabel")
+console.log(grabGuessNameLabel);
+const grabGuessButton = document.getElementById("guessButton")
+console.log(grabGuessButton)
 
-alert(`Nyob Zoo, kuv lub npe hu li ${input}. Kuv muaj ${input2} xyoos.`)
+console.log(grabGuessNameLabel.value)
+
+grabGuessButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    console.log(grabGuessNameLabel.value);
+
+    const paragraphElement = document.querySelector (".paragraph");
+    console.log(paragraphElement);
+
+    if (grabGuessNameLabel.value == 'tennis'){
+       paragraphElement.innerHTML = 'You guessed it right. It was Tennis.'
+
+    } else {
+        paragraphElement.innerHTML = 'You guessed it wrong. It was Tennis.'
+    }
+})
