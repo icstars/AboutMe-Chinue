@@ -13,9 +13,9 @@ grabGuessButton.addEventListener("click", (e) => {
     console.log(paragraphElement);
 
     if (grabGuessNameLabel.value == 'tennis'){
-       paragraphElement.innerHTML = 'You guessed it right. It was Tennis.'
+       paragraphElement.textContent = 'You guessed it right. It was tennis.'
 
     } else {
-        paragraphElement.innerHTML = 'You guessed it wrong. It was Tennis.'
+        paragraphElement.textContent = 'You guessed it wrong. It was tennis.'
     }
 })
